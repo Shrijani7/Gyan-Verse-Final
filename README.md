@@ -1,4 +1,5 @@
 # Gyan-Verse-Final
+Done using Python! That is why it can't be deployed instead a screen recording will be shared.
 Gyan Verse is an AI-powered tool that aims to provide education of the highest standards to all its users. 
 In an ever-evolving world, strong foundations and quality of education seem to be fading, 
 So we have made it our mission to provide our learners with the best resources possible and we do just that -
