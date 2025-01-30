@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyan Verse - AI Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Your existing CSS styles here */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1f1f1f, #333);
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .header .logo {
+            max-width: 150px;
+            margin-bottom: 1.1rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0.5rem 0;
+            font-family: 'Old Standard TT', serif;
+        }
+
+        .header h2 {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+            font-family: 'Old Standard TT', serif;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .main-content {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-section, .photos-section, .cta-section {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .about-section h2, .photos-section h2, .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 0 auto;
+            max-width: 800px;
+            color: #cfcfcf;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: #b0b0b0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #444;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #555;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            background-color: #1f1f1f;
+            color: #b0b0b0;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="GyanVerse Logo" class="logo">
+            <h1>Gyan Verse</h1>
+            <h2>Your Very Own Sacred Path to Empowered Learning</h2>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="about-section">
+            <h2>About Gyan Verse</h2>
+            <p>Gyan Verse is an AI-powered tool that aims to provide education of the highest standards to all its users. In an ever-evolving world, strong foundations and quality of education seem to be fading, so we have made it our mission to provide our learners with the best resources possible and we do just that - with cutting-edge AI education we make learning an enjoyable and interactive process across the globe. The cream of the crop content and innovative learning solutions all a touch away. 
+Our mission is to make education accessible and understandable for everyone, thus fostering innovation and creativity.</p>
+        </section>
+
+        <section class="photos-section">
+            <h2>AI in Education</h2>
+            <div class="photo-grid">
+                <img src="https://miro.medium.com/v2/resize:fit:1024/1*hv9GR9ESSTcWTvHMk1Szgw.png" alt="AI concept image">
+                <img src="https://i.pinimg.com/736x/d1/ab/4a/d1ab4a27f44409954e9e19b652cdaeab.jpg" alt="AI learning environment">
+                <img src="https://i.pinimg.com/236x/b9/44/42/b94442469b6b24ba25e86fbda2caa72a.jpg" alt="AI tools for education">
+                <img src="https://i.pinimg.com/236x/61/ed/fc/61edfc1c357fb2c499d581ad8d312142.jpg" alt="AI tools for education">
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Join Us</h2>
+            <p>Embark on your AI journey today and transform the way you learn.</p>
+            <a href="{{ url_for('login') }}" class="cta-button">Get Started</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Gyan Verse. All rights reserved.</p>
+    </footer>
+</body>
+</html>
